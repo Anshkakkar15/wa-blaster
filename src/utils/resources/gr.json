@@ -1,0 +1,42 @@
+{
+  "faqContent": {
+    "heading": "Häufig gestellte Fragen",
+    "subheading": "Brauchen Sie Hilfe? Hier finden Sie unsere häufigsten Fragen.",
+    "searchPlaceholder": "Geben Sie Ihr Stichwort ein...",
+    "actionBox": {
+      "title": "Haben Sie noch eine Frage?",
+      "description": "Wir helfen Ihnen gerne bei allen Fragen weiter! Sagen Sie uns einfach, wonach Sie suchen, und wir tun unser Bestes, um Sie zu unterstützen.",
+      "button": "Kontaktieren Sie uns"
+    }
+  },
+  "faq": [
+    {
+      "question": "Kann ich Massen-Nachrichten an WhatsApp-Gruppen senden?",
+      "answer": "Ja, unser Broadcasting-Tool ermöglicht es Ihnen, Massen- und personalisierte Nachrichten direkt an WhatsApp-Gruppen zu senden."
+    },
+    {
+      "question": "Kann ich Nachrichten im Voraus planen?",
+      "answer": "Absolut! Sie können Nachrichten so planen, dass sie zu bestimmten Zeiten mit dem Broadcast-Planer gesendet werden."
+    },
+    {
+      "question": "Wie funktioniert die KI-gestützte Vorlagenfunktion?",
+      "answer": "Unsere KI analysiert Ihre Anforderungen und erstellt automatisch Nachrichtenvorlagen, oder Sie wählen aus voreingestellten Standardvorlagen."
+    },
+    {
+      "question": "Kann ich Kontakte einfach importieren und verwalten?",
+      "answer": "Ja, Sie können Kontakte aus CSV oder Google Sheets importieren, mit Labels versehen und für eine optimierte Verwaltung mit CRM-Plattformen integrieren."
+    },
+    {
+      "question": "Gibt es eine Möglichkeit, WhatsApp-Nummern vor dem Senden zu validieren?",
+      "answer": "Ja, der WhatsApp-Nummernvalidator überprüft die Gültigkeit von Nummern, bevor Sie Nachrichten senden."
+    },
+    {
+      "question": "Unterstützt das System Medien- und Dateianhänge?",
+      "answer": "Ja, Sie können Bilder, Videos, Dokumente, Emojis und GIFs als Teil Ihrer Nachrichten senden."
+    },
+    {
+      "question": "Sind meine Daten sicher?",
+      "answer": "Ihre Privatsphäre hat für uns oberste Priorität. Alle Kontakte und Sendungen werden sicher mit starken Datenschutzkontrollen gespeichert."
+    }
+  ]
+}
