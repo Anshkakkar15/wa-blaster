@@ -1,11 +1,11 @@
-import {  useCallback, useEffect, useState } from 'react'
+// import {  useCallback, useEffect, useState } from 'react'
 import { Collapse } from 'react-bootstrap'
 
-import { findAllParent, findMenuItem, getAppMenuItems, getMenuItemFromURL } from '@/helpers/menu'
-import type { MenuItemType } from '@/types/menu'
+// import { findAllParent, findMenuItem, getAppMenuItems, getMenuItemFromURL } from '@/helpers/menu'
+// import type { MenuItemType } from '@/types/menu'
 // import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 
 // const DemosMenuDropdown = dynamic(() => import('./DemosMenuDropdown'))
 // const PagesMenuDropdown = dynamic(() => import('./PagesMenuDropdown'))
@@ -26,7 +26,7 @@ export type AppMenuProps = {
 
 // const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, showContactUs, showDocs }: AppMenuProps) => {
 const AppMenu = ({ mobileMenuOpen, ulClassName }: AppMenuProps) => {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   // const [activeMenuItems, setActiveMenuItems] = useState<string[]>([])
 
   // const menuItems: MenuItemType[] = getAppMenuItems()

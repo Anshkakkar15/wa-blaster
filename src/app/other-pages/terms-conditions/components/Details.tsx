@@ -8,14 +8,14 @@ const Details = () => {
         <Row>
           <Col xl={8} className="mx-auto">
             <div className="text-center mb-6">
-              <h1>Terms &amp; Conditions</h1>
+              <h1>{'Terms & Conditions'}</h1>
               <p className="lead mb-0">Last update on May 2025</p>
             </div>
 
             <h6 className="mb-3">Welcome</h6>
             <p>
-              Welcome to <strong>WABlasters!</strong> Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using
-              our services, website, and applications (collectively, the “Service”) operated by WABlasters.
+              Welcome to <strong>WABlasters!</strong> Please read these Terms and Conditions (&quot;Terms&quot;, &quot;Terms and Conditions&quot;)
+              carefully before using our services...
             </p>
             <p>
               By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not
