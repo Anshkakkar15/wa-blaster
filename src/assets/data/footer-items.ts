@@ -4,7 +4,6 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 're
 
 import flagUK from '@/assets/images/flags/uk.svg'
 import flagGR from '@/assets/images/flags/gr.svg'
-import flagSP from '@/assets/images/flags/sp.svg'
 
 type FooterLinkType = {
   name: string

@@ -1,4 +1,3 @@
-import { currency } from '@/states/constants'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { BsCheckCircle, BsXCircle } from 'react-icons/bs'
 import { features, pricingFeatures } from '../data'

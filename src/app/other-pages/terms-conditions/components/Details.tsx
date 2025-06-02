@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsArrowRight } from 'react-icons/bs'
 

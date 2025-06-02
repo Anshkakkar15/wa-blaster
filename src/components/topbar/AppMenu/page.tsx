@@ -1,17 +1,17 @@
-import { Suspense, useCallback, useEffect, useState } from 'react'
+import {  useCallback, useEffect, useState } from 'react'
 import { Collapse } from 'react-bootstrap'
 
 import { findAllParent, findMenuItem, getAppMenuItems, getMenuItemFromURL } from '@/helpers/menu'
 import type { MenuItemType } from '@/types/menu'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-const DemosMenuDropdown = dynamic(() => import('./DemosMenuDropdown'))
-const PagesMenuDropdown = dynamic(() => import('./PagesMenuDropdown'))
-const ResourcesMenuDropdown = dynamic(() => import('./ResourcesMenuDropdown'))
-const PortfolioMenuDropdown = dynamic(() => import('./PortfolioMenuDropdown'))
-const MegaMenuDropdown = dynamic(() => import('./MegaMenuDropdown'))
+// const DemosMenuDropdown = dynamic(() => import('./DemosMenuDropdown'))
+// const PagesMenuDropdown = dynamic(() => import('./PagesMenuDropdown'))
+// const ResourcesMenuDropdown = dynamic(() => import('./ResourcesMenuDropdown'))
+// const PortfolioMenuDropdown = dynamic(() => import('./PortfolioMenuDropdown'))
+// const MegaMenuDropdown = dynamic(() => import('./MegaMenuDropdown'))
 
 export type AppMenuProps = {
   mobileMenuOpen: boolean
@@ -22,33 +22,34 @@ export type AppMenuProps = {
   ulClassName?: string
 }
 
-const loading = () => <div></div>
+// const loading = () => <div></div>
 
-const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, showContactUs, showDocs }: AppMenuProps) => {
+// const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, showContactUs, showDocs }: AppMenuProps) => {
+const AppMenu = ({ mobileMenuOpen, ulClassName }: AppMenuProps) => {
   const pathname = usePathname()
-  const [activeMenuItems, setActiveMenuItems] = useState<string[]>([])
+  // const [activeMenuItems, setActiveMenuItems] = useState<string[]>([])
 
-  const menuItems: MenuItemType[] = getAppMenuItems()
-  /**
-   * activate the menuitems
-   */
-  const activeMenu = useCallback(() => {
-    // const trimmedURL = pathname?.replaceAll(basePath !== '' ? basePath : '', '/')
+  // const menuItems: MenuItemType[] = getAppMenuItems()
+  // /**
+  //  * activate the menuitems
+  //  */
+  // const activeMenu = useCallback(() => {
+  //   // const trimmedURL = pathname?.replaceAll(basePath !== '' ? basePath : '', '/')
 
-    const trimmedURL = pathname?.replaceAll('', '')
-    const matchingMenuItem = getMenuItemFromURL(menuItems, trimmedURL)
+  //   const trimmedURL = pathname?.replaceAll('', '')
+  //   const matchingMenuItem = getMenuItemFromURL(menuItems, trimmedURL)
 
-    if (matchingMenuItem) {
-      const activeMt = findMenuItem(menuItems, matchingMenuItem.key)
-      if (activeMt) {
-        setActiveMenuItems([activeMt.key, ...findAllParent(menuItems, activeMt)])
-      }
-    }
-  }, [pathname, menuItems])
+  //   if (matchingMenuItem) {
+  //     const activeMt = findMenuItem(menuItems, matchingMenuItem.key)
+  //     if (activeMt) {
+  //       // setActiveMenuItems([activeMt.key, ...findAllParent(menuItems, activeMt)])
+  //     }
+  //   }
+  // }, [pathname, menuItems])
 
-  useEffect(() => {
-    activeMenu()
-  }, [pathname, menuItems])
+  // useEffect(() => {
+  //   activeMenu()
+  // }, [pathname, menuItems])
 
   return (
     <Collapse in={mobileMenuOpen} className="navbar-collapse">
